@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuary.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Odi Ahamba</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="second-nav">
+        <div class="logo"> Odi Ahamba</div>
+        <div class="second-menu">
+            <div class="second-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="/img/profile-picc.png" alt="Odi Ahamba profile-pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text1>">Hello, I'm</p>
+            <h1 class="title">Odi Ahamba</h1>
+            <p class="section-text2">Frontend Developer</p>
+            <div class="btn-container">
+                <!-- <button class="btn btn-color-2">
+                    Download CV
+                </button> -->
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./img/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/Odinaka12'">
+                <img src="./img/pngwing.com.png" alt="My twitter profile" class="icon" onclick="location.href='https://twitter.com/Odinaka257?s=09'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section-text1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="img/about-pic.png" alt="me" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="/img/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1 year <br> Frontend Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="/img/education.png" alt="experience icon" class="icon">
+                        <h3>Education</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a motivated Web Developer with an extensive knowledge of web development, design, and coding, as well as experience in a wide range of programming languages, frameworks, and tools. Proven success in developing and deploying applications, websites, and web services. Highly organized and detail-oriented, with a knack for finding creative solutions to challenging problems.</p>
+                </div>
+            </div>
+        </div>
+        <img src="/img/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section-text1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Key Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>HTML</h1>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>CSS</h1>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>SASS</h1>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>JavaScript</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>Node JS</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>Git</h1>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>Graphic Design</h1>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>Excel</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <!-- <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>Node JS</h1>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/img/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h1>Git</h1>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <img src="/img/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section-text1">Browse My Resent</p>
+        <h1 class="title">Project</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="deatils-container color-container">
+                <div class="article-container">
+                    <img src="/img/facebook-project.png" alt="" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Facebook Website Clone</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Odinaka12'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://odinaka12.github.io/facebook-clone-website/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="deatils-container color-container">
+                <div class="article-container">
+                    <img src="/img/linkedin.png" alt="" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Linkedin Website Clone</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Odinaka12'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://odinaka12.github.io/linkedin-website-clone/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="deatils-container color-container">
+                <div class="article-container">
+                    <img src="/img/todo.png" alt="" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Todo App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Odinaka12'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://odinaka12.github.io/todo-list/'">Live Demo</button>
+                </div>
+            </div>
+           
+            </div>
+            </div>
+        </div>
+        <img src="/img/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section-text1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="img/email.png" alt="email" class="icon contact-icon email-icon">
+                <p><a href="mailto:odinakaahamba@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="img/pngwing.com.png" alt="title" class="icon contact-icon">
+                <p><a href="https://twitter.com/Odinaka257?s=09">Twitter</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &#169; 2023 John Doe All Right Reserved</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
